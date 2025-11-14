@@ -1,1 +1,29 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PixelCoder Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="title">anu.img.sec.co.pro.cloud</h1>
+
+<div class="card">
+<h2>Encode Image → Code (.pcd)</h2>
+<form action="/encode" method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Encode</button>
+</form>
+</div>
+
+<div class="card">
+<h2>Decode Code (.pcd) → Image</h2>
+<form action="/decode" method="POST" enctype="multipart/form-data">
+    <input type="file" name="codefile" required>
+    <button type="submit">Decode</button>
+</form>
+</div>
+
+</body>
+</html>
